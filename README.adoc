@@ -1,0 +1,43 @@
+= README
+
+== Prerequisite
+
+* terraform
+* a DO account with an SSH key in it
+* ansible
+* For SSH access: https://github.com/selivan/ansible-ssh
+
+== Setup
+
+    ansible-galaxy role install nickjj.docker
+    terraform init
+
+configure a your env with:
+
+    export DIGITALOCEAN_TOKEN=
+    # Path to file
+    export TF_VAR_SSH_KEY_FILE=
+    # Name in Digital Ocean
+    export TF_VAR_DO_SSH_KEY_NAME=
+
+Run
+
+    terraform plan
+    terraform apply
+
+== Operations
+
+sync to challenge server (separate from ctfd)
+
+    rsync -Ptr --perms -F -e 'ssh -i <key>' ./ root@<ip>:/srv/h0h0h0day/
+
+connect to the server, start challenges
+
+    ansible-ssh -i ansible/terraform.py challenge-server
+    byobu
+    cd /srv/h0h0h0day/
+    ./start-all.sh
+
+== CTFd
+
+Use ctfcli

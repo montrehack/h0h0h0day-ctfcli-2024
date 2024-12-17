@@ -1,0 +1,2 @@
+Now that ctfcli doesn't do a `git init` with `ctf init --no-git` we could host
+everything in our challenges repository.

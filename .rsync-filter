@@ -1,0 +1,7 @@
+- .git/
+- .ctf/
+- .terraform/
+- env.sh
+- terraform.tfstate
+- terraform.tfstate*
+- *.tf
