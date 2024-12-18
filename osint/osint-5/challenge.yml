@@ -1,0 +1,23 @@
+﻿name: "LinkedIn gifts - 5"
+author: "ali31415"
+category: OSINT
+description: |
+    I wonder how many flags you can find here : www.linkedin.com/in/julie31415
+
+value: 100
+type: standard
+
+flags:
+    - "FLAG005TH1SB11TCHG0TAJ0B"
+
+tags:
+    - OSINT
+
+hints:
+    - {
+        content: "You better like my last post",
+        cost: 0
+    }
+
+state: visible
+version: "0.1"

@@ -1,0 +1,15 @@
+name: "Custom-Tshirt"
+author: "ripsou"
+description: |
+  Un simple site qui permet de faire des t-shirt customisés.
+connection_info: http://challenges.montrehack.ca:15685
+category: Web
+tags:
+  - web
+  - appsec
+value: 200
+flags:
+  - flag{SSTI_vulnerability_is_very_dangerous}
+version: "0.1"
+hints:
+  -"penses à la vuknérabilité SSTI"

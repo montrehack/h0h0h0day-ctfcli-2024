@@ -1,0 +1,13 @@
+name: "Boolean Wonderland"
+author: "Laurent Mercier"
+category: Crypto
+description: |
+  You are lost in Boolean Wonderland and a myterious entity needs you to solve boolean circuits. 
+
+  `ssh ctfuser@challenges.montrehack.ca -p 2222 #password is nowel` 
+
+value: 100
+flags: 
+  - flag{Y0u_kNoW_8ool3An_a1G3Bra}
+
+version: "1.0"

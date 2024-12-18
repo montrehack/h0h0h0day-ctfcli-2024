@@ -1,0 +1,23 @@
+﻿name: "LinkedIn gifts - 2"
+author: "ali31415"
+category: OSINT
+description: |
+    I wonder how many flags you can find here : www.linkedin.com/in/julie31415
+
+value: 100
+type: standard
+
+flags:
+    - "FLAG002_UKN0WH0WT01NSP3CT_93dKFur"
+
+tags:
+    - OSINT
+
+hints:
+    - {
+        content: "I think it's Ctrl+Maj+C on Windows",
+        cost: 0
+    }
+
+state: visible
+version: "0.1"

@@ -1,0 +1,21 @@
+name: "Santa's Whereabouts"
+author: "Ch0ufleur"
+category: Web
+description: |
+  Every year, Santa offers a special platform where lucky children can track his sleigh on the big night. The North Pole IT Teams are currently in the debug and testing phase for the 2024 edition. I wonder where Santa is spending his time during those testing days...
+  
+  http://iorabu.ca:4173
+  Note - Ports 22, 80 and 443 are out of scope for this challenge. No bruteforce/fuzzing needed.
+  Flag format - All numbers in Santa's GPS location concatenated with the GPS Number (caps, no spaces). Add flag{}.
+
+value: 200
+type: standard
+
+flags:
+    - "flag{452902733343X6F3AA2}"
+
+tags:
+    - Web
+
+state: visible
+version: "0.1"

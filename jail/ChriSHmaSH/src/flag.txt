@@ -1,0 +1,5 @@
+CONGRATULATIONS
+Unless you found a shortcut, this was a tough one. 
+
+Here is your well deserved flag:
+flag{WHY_4RE_Y0U_S0_L0UD_?}

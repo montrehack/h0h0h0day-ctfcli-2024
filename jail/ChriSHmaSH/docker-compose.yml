@@ -1,0 +1,7 @@
+services:
+  santashell:
+    build: ./src/.
+    container_name: chrishmash
+    restart: unless-stopped
+    ports:
+      - 36087:22

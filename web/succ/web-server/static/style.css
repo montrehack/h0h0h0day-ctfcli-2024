@@ -1,0 +1,34 @@
+body {
+    background-color: #14a;
+    color: #eee;
+
+    margin-top: 5rem;
+}
+
+main {
+    max-width: 50rem;
+    
+    margin: 4rem auto 4rem auto;
+    padding: 0.8rem;
+
+    color: #111;
+    background-color: #eee;
+}
+
+main *:first-child {
+    margin-top :0;
+}
+
+main *:last-child {
+    margin-bottom: 0;
+}
+
+header, footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+}

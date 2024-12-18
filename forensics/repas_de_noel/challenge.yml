@@ -1,0 +1,11 @@
+name: "Repas de Noël 🎄🍽️☃️"
+author: "Deimos"
+category: Forensics
+description: J'ai tellement faim, si seulement quelqu'un pouvait écouter mes demandes
+value: 100
+
+flags:
+  - flag{M14M_D35_B15CU1T5}
+
+files:
+  - repas_de_noel.pcapng

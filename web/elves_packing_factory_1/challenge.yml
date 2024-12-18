@@ -1,0 +1,18 @@
+name: "Elves packing factory 1"
+author: "hellnia"
+category: Web
+description: |
+  "Come on, move it diddly doo, dear colleague elf!" says your elf-boss, Alabaster Snowball. You just arrived at your new job in the gift packing facility and it's way faster than you thought.
+  To be honest, you kinda hate his guts... And you are not into their disgustingly sweet way of life. You wanna get his gift.
+  Because, yes, all elves also get gifts, and its time for you to get Alabaster's gift. He is not diddly doo nice, you find.
+value: 100
+type: standard
+connection_info: tbd
+
+flags:
+    - FLAG{SantaLovesYouMyDiddlyDooDearElfBossAlabasterSnowballHereIs6NorthPoleDollars}
+
+tags:
+    - SDLC
+
+version: "0.1"

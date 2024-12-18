@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  app:
+    image: winterboot
+    ports:
+      - "36969:8080"
+    environment:
+      winterboot.superSecretPassword: Rud0lph1sMyF4v0r1t3

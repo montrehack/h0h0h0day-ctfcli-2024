@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Santa's Kitchen Helper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h40v40H0V0zm20 2v36M2 20h36" stroke="%23e9ecef" fill="none"/></svg>');
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 2rem;
+            position: relative;
+        }
+        .warning {
+            background-color: #dc3545;
+            color: white;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            margin-bottom: 2rem;
+        }
+        .result-box {
+            background-color: white;
+            border-radius: 0.25rem;
+            padding: 1rem;
+            margin-top: 2rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+        }
+        .kitchen-card {
+            border: 2px solid #dee2e6;
+            border-radius: 15px;
+            background-color: white;
+            position: relative;
+        }
+        .recipe-input {
+            font-family: 'Courier New', monospace;
+            background-color: #f8f9fa;
+        }
+        .kitchen-btn {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+        .kitchen-btn:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+            color: white;
+        }
+        .kitchen-icon {
+            font-size: 1.5em;
+            margin-right: 0.5em;
+        }
+        .title-decoration {
+            display: inline-block;
+            margin: 0 15px;
+            opacity: 0.7;
+        }
+    </style>
+    <script>
+        function updateURL(value) {
+            const url = new URL(window.location);
+            if (value) {
+                url.searchParams.set('recipe_data', value);
+            } else {
+                url.searchParams.delete('recipe_data');
+            }
+            window.history.replaceState({}, '', url);
+        }
+
+        function fill(value) {
+            const textarea = document.querySelector('textarea[name="recipe_data"]');
+            textarea.value = value;
+            textarea.dispatchEvent(new Event('input'));
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-4 text-center">
+            <span class="title-decoration">🍳</span>
+            Santa's Kitchen Helper
+            <span class="title-decoration">🥄</span>
+        </h1>
+        <div class="warning">
+            <h5 class="mb-0">⚠️ Warning: Santa's elves should only process trusted recipes from the North Pole kitchen!</h5>
+        </div>
+
+        <div class="kitchen-card">
+            <div class="card-body p-4">
+                <h4 class="mb-3">🧑‍🍳 Recipe Processor</h4>
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="recipe_data" class="form-label">Enter your encoded recipe data:</label>
+                        <textarea class="form-control recipe-input" name="recipe_data" rows="4" oninput="updateURL(this.value)" placeholder="Paste your base64 encoded recipe here...">{{ recipe_data }}</textarea>
+                    </div>
+                    <button type="submit" class="btn kitchen-btn">
+                        <span class="kitchen-icon">🧪</span>Process Recipe
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="fill('gASVDwAAAAAAAACMC0hlbGxvIHdvcmxklC4=')">Example 1</button>
+                    <button type="button" class="btn btn-secondary" onclick="fill('gASVGQAAAAAAAAB9lCiMBWhlbGxvlIwFd29ybGSUSwFLAnUu=')">Example 2</button>
+                </form>
+            </div>
+        </div>
+
+        {% if result %}
+        <div class="result-box">
+            <h4 class="text-success">🍽️ Recipe Output:</h4>
+            <pre class="bg-light p-3 rounded">{{ result }}</pre>
+        </div>
+        {% endif %}
+
+        {% if error %}
+        <div class="result-box">
+            <h4 class="text-danger">👨‍🍳 Kitchen Error:</h4>
+            <pre class="bg-light p-3 rounded text-danger">{{ error }}</pre>
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

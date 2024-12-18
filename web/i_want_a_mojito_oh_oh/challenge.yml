@@ -1,0 +1,30 @@
+name: "For Christmas, I Want A Mojito oh oh"
+author: "Sideni"
+category: Web
+description: |
+    Pour Noël, quoi de mieux que de s'asseoir au bar pour apprécier la splendide vue sur l'océean
+    et le fabuleux José qui semble être d'une humeur excellente ? Tout ça, en appréciant
+    un délicieux... hmmm... C'est quoi ce drink-là ?
+    Est-ce que c'est juste du jus d'orange ?
+    As-tu de la vodka dans le tien toi ?
+    Arfff...
+
+    Le format de flag est : H0H0H0{du_magnifique_texte}
+
+    http://sideni.xyz:1234/
+value: 300
+type: standard
+
+connection_info: http://sideni.xyz:1234/
+
+files:
+    - TheBarman-José.zip
+
+flags:
+    - "H0H0H0{JOSE_TA_VU_TE_SERVIR_DANS_SON_BAR...LA_MOINDRE_DES_CHOSES:PARTAGER}"
+
+tags:
+    - Web, Crypto
+
+state: visible
+version: "1.0"

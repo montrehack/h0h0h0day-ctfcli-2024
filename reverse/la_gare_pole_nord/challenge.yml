@@ -1,0 +1,27 @@
+name: "La Gare du Pôle Nord"
+author: "Oneirical (Julien)"
+category: Reverse Engineering
+description: Dans le fond, un programme informatique, c'est comme un train qui passe de station en station, et qui s'arrête de temps en temps. Sauras-tu utiliser un débogueur pour forcer le train à s'arrêter juste au bon moment?
+value: 100
+type: standard
+
+flags:
+    - FLAGhohohobienjouetumastrouve
+
+tags:
+    - reverse
+    - rust
+
+files:
+    - la_gare
+
+hints:
+    - Je recommande d'essayer rust-lldb.
+    - {
+        content: "Utilise rust-lldb, puis place un breakpoint aux instructions 'eq'. Le programme s'arrêtera à l'étape cruciale de vérification du mot de passe!",
+        cost: 0
+    }
+
+state: visible
+
+version: "0.1"

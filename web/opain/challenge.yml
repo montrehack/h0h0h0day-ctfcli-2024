@@ -1,0 +1,26 @@
+name: "OPain"
+author: "becoh0"
+description: |
+  During the holidays, small businesses cannot catch a break from hackers, and OPain is no exception. This family-owned bakery recently put online an online ordering system for their breads. Their largest customers use it to place orders in bulk and get a discount.
+
+  However, the ordering system is the target of malicious crumb-inals who try to subvert the system to get a larger discount they are not entitled to.
+
+  I placed a secret discount code in the system. Can you find it?
+
+  ```
+  nc challenges.montrehack.ca 36086
+  ```
+  
+  Flag format: `FLAG-[a-f0-9]+`
+
+category: Web
+
+files:
+  - opain.go
+
+value: 300
+
+flags:
+  - FLAG-46fa6417dd4ef07a4d066e19097c7517a0b07401
+
+version: "0.1"

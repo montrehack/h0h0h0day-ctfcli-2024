@@ -1,0 +1,12 @@
+name: unlock_some_binary
+author: Crevetor
+category: Reverse Engineering
+decription: I hope we have the right key (the flag format is flag{something})
+value: 100
+
+flags:
+  - flag{I_like_my_1ntel_beef_k3y}
+
+files:
+  - unlock_some_binary.exe
+  - unlock_some_binary

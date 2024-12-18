@@ -1,0 +1,22 @@
+name: "Jardin de givre"
+author: "nic-lovin"
+category: Web
+description: |
+    Dis-moi que ma lettre va se rendre au père noël, plzzzzzz
+    Aucun bruteforce requis.
+
+    https://flask-hello-world-fawn-kappa.vercel.app/
+value: 200
+type: standard
+
+flags:
+    - "FLAG-f06d0b7c01d6a41c3064bb19b79a440f"
+
+files:
+      - source.py
+
+tags:
+    - Web
+
+state: visible
+version: "0.1"

@@ -1,0 +1,14 @@
+name: Where is my mind?
+author: Atos
+category: Forensics
+description: |
+    Elliot's mind is fractured, and he's starting to suspect that he's hiding something from himself. 
+    Can you help uncover what secrets he's trying to bury deep in his subconscious? 
+    Follow the hidden clues to reveal the truth.
+
+    Format du flag = flag-{*}
+value: 100
+flags:
+    - flag{Th1s1sh0w3ll1i0tH1d3Fil3s}
+files:
+    - fs0ciety.xyz

@@ -1,0 +1,21 @@
+name: "Elves packing factory 2"
+author: "hellnia"
+category: Web
+description: |
+  Santa comes into the packing factory, he is smiling, like always, but he seems worried.
+  He hops onto a box and yells: 
+  "My dear diddly doo beautiful hard-working elves. Someone stole a gift! Because of this ood-ylddid sad event.
+  You know how we say that one ood-ylddid rotten snowflakes makes the whole snow ood-ylddid bad? Everyone here is ood-ylddid fired tonight.
+  You will be replaced by new snowflakes starting midnight." He then smiles again and leaves!
+  What a ood-ylddid rotten snowflake he is! I think you want the gift he gives to himself, no?
+value: 100
+type: standard
+connection_info: tbd
+
+flags:
+    - FLAG{DearSantaYouAreAbsolutelyDiddly-DooAwesomeUnlikeThatRottenSnowflake}
+
+tags:
+    - SDLC
+
+version: "0.1"

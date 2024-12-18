@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winterboot - Christmas Theme</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/styles.css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+<ul class="strand">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<div class="snow">
+    <div class="christmas-container">
+        <header>
+            <h1>🎄 Welcome to Winterboot 🎄</h1>
+        </header>
+
+        <!-- Gift Submission Form -->
+        <div>
+            <h2>Wrap a New Gift</h2>
+            <form action="#" th:action="@{/gift}" th:object="${gift}" method="post" class="gift-form">
+                <table>
+                    <tr>
+                        <td><strong>Message</strong></td>
+                        <td><input type="text" th:field="*{message}" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="submit-row">
+                            <input type="submit" value="🎁 Wrap your Gift 🎁" />
+                        </td>
+                    </tr>
+                </table>
+                <div class="alert alert-warning" th:if="${#fields.hasErrors('message')}" th:errors="*{message}" />
+            </form>
+            <div th:if="${giftId != null}">
+                <p><strong>Here is your gift ID: <span th:text="@{__${giftId}__}">Gift ID</span></strong></p>
+            </div>
+        </div>
+
+        <!-- Gift Lookup -->
+        <div>
+            <h2>Unwrap a Gift</h2>
+            <form th:action="@{/gift}" method="get" class="gift-form">
+                <tr>
+                    <td>
+                        <input type="text" name="giftId" placeholder="Enter Gift ID" pattern="^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$" title="Please enter a valid UUID" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-row">
+                        <input type="submit" value="🎁 Unwrap your Gift 🎁" id="btn"/>
+                    </td>
+                </tr>
+            </form>
+        </div>
+        <p>🎅 May Your Gifts Be Full of Surprises! 🎅</p>
+    </div>
+    <!-- Display Gift Details -->
+    <div th:if="${gift.id != null}" id="modalContainer" class="modal-container">
+        <div class="popup-content">
+            <span id="ribbon" class="first-ribbon"></span>
+            <span id="ribbon" class="second-ribbon"></span>
+            <div class="gift" id="gift">
+                <div class="gift-details">
+                    <h2>Here's your gift!</h2>
+                    <p><strong>ID : </strong> <span th:text="@{__${gift.id}__}">Gift ID</span></p>
+                    <p><strong>Message : </strong> <span th:text="@{__${gift.message}__}">Gift Message</span></p>
+                    <button class="close">Another gift!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById("modalContainer");
+    var btn = document.getElementById("btn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+</body>
+</html>

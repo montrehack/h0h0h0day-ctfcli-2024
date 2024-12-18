@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  sleigh_ride:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 42069:4444
+

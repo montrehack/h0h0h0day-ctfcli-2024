@@ -1,0 +1,6 @@
+services:
+  opain:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 36086:36086

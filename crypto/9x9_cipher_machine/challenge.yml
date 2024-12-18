@@ -1,0 +1,16 @@
+name: "The Enigmatic 9x9 Cipher Machine"
+author: "axdoomer"
+description: |
+  In the spirit of the holiday season, a cryptic message has emerged, wrapped in the mystery of a 9x9 grid. This grid, adorned with a festive mix of characters and numbers, holds the key to unlocking the encrypted flag. Your mission, should you choose to accept it, is to decipher the hidden message by unraveling the grid's mathematical pattern. Each character's position within the grid is like a gift under the tree, waiting to be discovered and unwrapped.
+
+  Are you ready to test your cryptographic skills and uncover the secrets of the Crypto Grid? Embrace the challenge and let the holiday magic guide you. Good luck, cryptographer! 🎄🔍
+
+connection_info: http://challenges.montrehack.ca:39666/square.php
+category: Crypto
+tags:
+  - cryptography
+value: 200
+flags:
+  - 15TH4TN0TTH3R1GHTF7AGQU3ST10NM4RK
+  - 15th4tn0tth3r1ghtf7agqu3st10nm4rk
+version: "0.1"

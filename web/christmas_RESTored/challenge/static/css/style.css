@@ -1,0 +1,116 @@
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #d32f2f;
+            color: #ffd700;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffd700;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: white;
+        }
+
+        .navbar .greeting {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        .content {
+            margin-top: 100px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .profile {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h2 {
+            color: #d32f2f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile label {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .profile input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .profile button {
+            width: 100%;
+            padding: 10px;
+            background-color: #d32f2f;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .profile button:hover {
+            background-color: #a22323;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }

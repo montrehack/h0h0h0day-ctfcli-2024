@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  web:
+    image: "santavision"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    expose:
+      - "8000"
+  nginx:
+    image: "nginx:latest"
+    ports:
+      - 36123:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./server/static:/var/www/static
+    depends_on:
+      - web

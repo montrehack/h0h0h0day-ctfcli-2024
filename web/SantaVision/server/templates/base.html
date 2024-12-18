@@ -1,0 +1,32 @@
+{% from "window.html" import window %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SantaVision</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <div style="padding-inline: 4rem;">
+        {% call window("SantaVision") %}
+        <p>
+            Santavision is a brand new online platform to help Santa monitor children around the world.
+            With Santavision, Santa can now keep a close eye on children directly in their homes, ensuring they
+            are always on their best behavior. <br>
+            This state-of-the-art spying platform uses advanced technology to provide real-time updates to
+            Santa, making his job easier and more efficient.
+            Whether it's checking if kids are doing their homework or making sure they are being nice to their
+            siblings, Santavision has got it covered.
+        </p>
+
+        {% endcall %}
+    </div>
+    {% block content %}{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+name: "Gift wrapper"
+author: "niftic"
+category: pwn
+description: |
+    The elfs have forgotten how to use the gift wrapper machine!
+    They can't remember on which side to put the bow.
+    Can you help them get a shell?
+
+value: 200
+type: standard
+connection_info: nc niftic.ca 1337
+flags:
+    - "flag{the_real_gift_is_the_hashes_we_made_along_the_way}"
+files:
+    - gift_wrapper.zip
+hints:
+    - Following the Christmas values, we should probably call the gift() function.
+    - Can you control the value of the wrapped gift?
+    - Don't overthink it! Are you using everything under your control?
+state: visible
+version: "0.1"

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Page{% endblock %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="/static/css/viewer.css">
+{% endblock %}
+{% block content %}
+    <div style="max-width: 64rem; margin: auto auto; padding: 1rem;">
+        {% call window(page) %}
+        <figure id="videoContainer">
+            <video id="video" data-state="{{ video.img }}" controls preload="metadata"
+                poster="/static/img/{{ video.img }}.png" muted>
+                <source src="/static/{{ video.path }}/video.mp4" type="video/mp4">
+                {% if video.subtitle %}
+                <track src="/static/{{ video.path }}/sub.vtt" kind="captions" srclang="en">
+                {% endif %}
+        </figure>
+        <div id="video-controls" class="field-row controls" data-state="hidden">
+            <button id="playpause" type="button" data-state="play">Play/Pause</button>
+            <button id="stop" type="button" data-state="stop">Stop</button>
+            <input type="range" id="seek" value="0" min="0" step="1">
+            <button id="mute" type="button" data-state="mute" disabled>Mute/Unmute</button>
+            <button id="volinc" type="button" data-state="volup" disabled>Vol+</button>
+            <button id="voldec" type="button" data-state="voldown" disabled>Vol-</button>
+            {% if video.subtitle %}
+            <!-- 
+                TODO: Generating cameras for all children in the world is too costly.
+                Enable once we can afford it.
+            -->
+            <!-- <button id="sub" type="button" data-state="sub">Subtitles</button> -->
+            {% endif %}
+        </div>
+        <div class="status-bar" style="padding-top: 0.5rem;">
+            <p class="status-bar-field" id="time-label">00.00/00.00</p>
+            <p class="status-bar-field" id="volume-label">Volume: 0%</p>
+            <p class="status-bar-field" id="muted-label"></p>
+        </div>
+        {% endcall %}
+    </div>
+    <script src="/static/js/viewer.min.js"></script>
+{% endblock %}

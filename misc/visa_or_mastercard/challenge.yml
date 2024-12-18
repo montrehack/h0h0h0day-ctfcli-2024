@@ -1,0 +1,16 @@
+name: "Visa Or MasterCard"
+author: "Houssem0x1"
+category: Misc
+description: |
+  > I’ve taken several credit cards from my friends,  
+  > but I can’t tell which ones are VISA and which are MasterCard.  
+  > Could you help me figure it out?  
+
+  >> Flag Format: flag{something_here!}  
+value: 100
+
+flags:
+      - flag{V15a_0r_M4573rC4rd_0r_b1N4ry!!!}
+
+files:
+      - cards.txt

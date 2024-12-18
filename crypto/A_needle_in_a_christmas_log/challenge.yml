@@ -1,0 +1,15 @@
+name: "A needle in a christmas log"
+author: "RMI78"
+category: Crypto
+description: "Mother Santa baked a delicious christmas log and her secret ingredient is a fine and advanced mix of bases. Unfortunately she lost the flag in the process, can you find it ?"
+value: 100
+type: standard
+
+flags:
+    - flag{w0w_s0_m4ny_l4y3rs_1n_th1s_l0g}
+
+
+files:
+    - encoded_zipped_flag.zip
+
+version: "0.1"

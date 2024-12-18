@@ -1,0 +1,31 @@
+name: "FENtastic"
+author: "axdoomer"
+description: |
+  Once upon a time in the North Pole, Santa Claus faced a unique challenge. With Christmas approaching, he needed a secure way to communicate with his elves and reindeer. The mischievous Jack Frost had been intercepting their messages, causing chaos in the workshop. Santa knew he needed a clever solution.
+
+  One snowy evening, as Santa pondered over his chessboard 🙾, an idea struck him. He decided to use the chessboard to create an encrypted communication system. This way, only those who knew the secret of the chessboard could decipher the messages.
+
+  To add an extra layer of magic, Santa sprinkled his special Christmas powder over the chessboard. This powder, a blend of enchanted snowflakes and a touch of Christmas cheer, made the board glow with a soft, magical light. The powder ensured that the messages would remain invisible to anyone who didn't know the secret.
+
+  Santa gathered his elves and reindeer and explained the new system. They practiced moving the pieces and decoding the messages until they became experts. With their new encrypted communication method, they could coordinate their efforts without fear of Jack Frost's interference.
+
+  As Christmas Eve approached, the workshop buzzed with activity. The elves worked tirelessly, guided by Santa's encrypted messages. The reindeer prepared for their journey, confident that they would receive their instructions clearly and securely.
+
+  On Christmas Eve, Santa loaded his sleigh and set off on his magical journey. Thanks to the encrypted chessboard and the magical Christmas powder, everything went smoothly. Santa delivered presents to children all around the world, spreading joy and cheer.
+
+  And so, Santa's clever use of the chessboard and his magical Christmas powder ensured that Christmas was saved, and the North Pole remained a place of wonder and enchantment. 🎄✨
+
+  You are Magnus Carlsen, and on Christmas morning, you find a beautifully wrapped package 🎁 under your tree. As you unwrap it, you discover Santa's enchanted chessboard, glowing softly with a magical light. Intrigued, you examine the board and notice something...
+
+connection_info: http://challenges.montrehack.ca:39666/chess.php
+category: Web
+tags:
+  - web
+value: 200
+flags:
+  - Movefastplanwellbeatfoes
+  - Move fast plan well beat foes
+  - movefastplanwellbeatfoes
+  - Move Fast Plan Well Beat Foes
+  - move fast plan well beat foes
+version: "0.1"

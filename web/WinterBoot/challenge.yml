@@ -1,0 +1,15 @@
+name: "The Gift of Receiving"
+author: "Wills"
+description: |
+  Welcome to santa's new gift factory, it works ... most of the time
+
+connection_info: http://challenges.montrehack.ca:36969
+category: Web
+tags:
+  - web
+value: 200
+flags:
+  - FLAG{0H_0H_0H_1T5_CHR15TM4S_THYM3}
+files:
+  - source.zip
+version: "0.1"

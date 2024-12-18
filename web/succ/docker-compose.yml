@@ -1,0 +1,10 @@
+services:
+  web-server:
+    build: ./web-server
+    environment:
+      - TRIAGEUSER=triage
+      - TRIAGEPASS=triageisfun789!
+    ports:
+    - 5001:5000
+  triage-server:
+    build: ./triage-server

@@ -1,0 +1,13 @@
+name: Christmas RESTored
+author: "willi34"
+category: Web
+description: Santa Clause and his elves have started to build a website to give a sneak peak of christmas to the kids on the nice list. It's up to you to test the security of this in-progress application to make sure christmas goes smoothly.
+value: 100
+
+connection_info: http://challenges.montrehack.ca:34340/
+
+flags:
+      - flag{m@ss_as51gnm3nt_1nt0_lfi_58307}
+
+files:
+      - christmas-restored.zip

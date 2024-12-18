@@ -1,0 +1,17 @@
+{% macro window(title)%}
+<div class="window">
+    <div class="title-bar">
+        <div class="title-bar-text">
+          {{ title }}
+        </div>
+
+        <div class="title-bar-controls">
+          <button disabled>?</button>
+          <button disabled><b>X</b></button>
+        </div>
+      </div>
+    <div class="window-body">
+        {{ caller() }}
+    </div>
+</div>
+{% endmacro %}

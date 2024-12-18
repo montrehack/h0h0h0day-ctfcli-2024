@@ -1,0 +1,19 @@
+name: "Sleigh Ride"
+author: "Peph0h0"
+description: |
+  I've got snow in my eyes.
+
+connection_info: http://challenges.montrehack.ca:42069
+category: pwn
+tags:
+  - pwn
+  - strace
+  - ldd
+value: 200
+flags:
+  - h0h0h0{Tr4c1ng_7hr0ugH_t3h_sn0w_m0fo}
+files:
+  - libc.so.6
+  - ld-linux-x86-64.so.2
+
+version: "0.1"

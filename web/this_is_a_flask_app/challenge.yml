@@ -1,0 +1,25 @@
+name: "This is a Flask App"
+author: "not.human1033"
+category: Web
+description: |
+    Hi, I have an old website. I think it contains vulnerabilities. Maybe you can recover some useful information!
+
+    https://hohoho.sparkland.ca/
+value: 200
+type: standard
+
+flags:
+    - "flag{ThisIsAFlagHohoho_Sparkland}"
+
+tags:
+    - Web
+
+hints:
+    - Check the surrondings of the "christmas" tree
+    - {
+        content: "Is there anything to decode, do you have the key?",
+        cost: 0
+    }
+
+state: visible
+version: "0.2"

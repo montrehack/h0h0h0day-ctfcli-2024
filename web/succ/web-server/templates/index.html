@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowman Urgent Care Center</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>☃️ Snowman Urgent Care Center ☃️</h1>
+        <p>
+            Are you feeling a little droopy? Is the sun a little bit too strong today? Did someone mercilessly steal
+            your nose?<br>
+            Don't worry, we're here to help.
+        </p>
+    </header>
+
+    <main>
+        <p>Please fill this form and we will triage you appropriately.</p>
+        <form method="POST" action="/submit">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Frosty" required><br><br>
+
+            <label for="temperature">Temperature (°C):</label><br>
+            <input type="number" id="temperature" name="temperature" min="-30" max="30" placeholder="-10"
+                required><br><br>
+
+            <label for="symptoms">Symptoms:</label><br>
+            <textarea id="symptoms" name="symptoms" rows="5" placeholder="Heartburn
+Missing nose
+Extraneous limb
+Mismatched buttons" required></textarea><br><br>
+
+            <button type="submit">Send to triage</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>🎄 Merry <a href="https://montrehack.ca/">h0h0h0</a>! - @ 2024 SUCC, Inc. All rights reserved. 🎄</p>
+    </footer>
+</body>
+
+</html>

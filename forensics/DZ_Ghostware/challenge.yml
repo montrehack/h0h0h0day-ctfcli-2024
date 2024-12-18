@@ -1,0 +1,14 @@
+name: "DZ GHOSTWARE"
+author: "Houssem0x1"
+category: Forensics
+description: |
+      A ghost came to our home; he is hiding everywhere... everywhere. We can't find it! Maybe it's because he is living off the land? Find the two parts of the flag.                        > Attachment Download link: https://osullivan0-my.sharepoint.com/:u:/g/personal/241-0135_osullivan_edu/EaS0DQPmd6tCu81HOJJ5HmsBNdZrXtw22LvPq1A9NwVphw?e=XKnS68
+
+value: 500
+
+flags:
+      - flag{P3rS1$TEnC3_gH0$T_v1A_R3g157RY}
+      
+tags: 
+      - Endpoint Forensics
+      

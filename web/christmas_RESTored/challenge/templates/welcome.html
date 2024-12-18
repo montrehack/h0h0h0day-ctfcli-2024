@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Christmas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+     
+</head>
+<body>
+   <nav class="navbar">
+    <div class="logo">
+        Christmas Wonderland
+    </div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="/api/user/gifts">Gifts</a>
+        <a href="profile">Profile</a>
+    </div>
+    <div class="greeting">🎄 Happy Holidays! 🎅</div>
+</nav>
+
+<div class="content">
+    <h1 style="color: lightblue">Welcome to the Christmas Wonderland!</h1>
+    <br>
+    <div id="countdown" style="display: flex; justify-content: center; gap: 20px; font-size: 2rem;">
+        <div style="text-align: center;">
+            <span id="days" style="font-weight: bold; display: block; font-size: 2.5rem;">0</span>
+            <span>Days</span>
+        </div>
+        <div style="text-align: center;">
+            <span id="hours" style="font-weight: bold; display: block; font-size: 2.5rem;">0</span>
+            <span>Hours</span>
+        </div>
+        <div style="text-align: center;">
+            <span id="minutes" style="font-weight: bold; display: block; font-size: 2.5rem;">0</span>
+            <span>Minutes</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2024 Christmas Wonderland. All Rights Reserved.
+</footer>
+
+<script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+</body>
+</html>

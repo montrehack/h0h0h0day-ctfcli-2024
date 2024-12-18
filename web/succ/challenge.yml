@@ -1,0 +1,22 @@
+name: ☃️ Snowman Urgent Care Center ☃️
+author: Linkster78
+category: Web
+
+
+description: |
+  Are you feeling a little droopy? Is the sun a little bit too strong today? Did someone mercilessly steal your nose?
+
+  Don't worry, we're here to help.
+
+  Flag format: `h0h0h0\{[\w_]+\}`
+
+connection_info: http://challenges.montrehack.ca:5001
+
+type: standard
+value: 300
+
+flags:
+  - h0h0h0{ftp_is_f4nt4st1c_0f827e4c}
+
+files:
+  - succ.tar.gz

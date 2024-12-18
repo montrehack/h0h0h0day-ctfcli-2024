@@ -1,0 +1,14 @@
+name: Gift Delivery
+author: "L"
+category: Misc
+description: |
+      I was working on a project to automate gift deliveries for Christmas when disaster struck—I hit my head and forgot all my passwords! The only thing I have left is the disk from the machine I was working on. Can you recover my code and save Christmas?\n\nVHD file:\n- Type: Debian (64-bit)\n- MD5: 76fcbb435de6e4d805181f5e87fce124\n- SHA256: 1eea5aba5c63b664496f6bcf81b1640c3c39d6702946bf67e20449d7c5a2ef44
+
+      Download link: https://sendgb.com/1lYIheN7jiP
+value: 100
+
+flags:
+      - flag{y0u_54v3d_chr157m45!}
+
+# files:
+#       - Project.vhd

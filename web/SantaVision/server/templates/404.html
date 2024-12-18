@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+    .error-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .error-msg {
+        padding: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<div style="max-width: 15rem; margin: auto auto; padding: 1rem;">
+    {% call window("404 Not Found") %}
+    <div class="error-container">
+        <img src="/static/img/404.png" />
+        <span class="error-msg">
+            Could not find the requested page. Please go back to the previous page.
+        </span>
+    </div>
+    <div class="field-row" style="justify-content: flex-end; padding: 4px;">
+        <button onclick="window.location.href='/'">Back</button>
+    </div>
+    {% endcall %}
+</div>
+{% endblock %}

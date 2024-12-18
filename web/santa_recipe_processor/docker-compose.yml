@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "15215:5000"
+    develop:
+      watch:
+        - action: rebuild
+          path: ./templates
+
+        - action: rebuild
+          path: ./app.py

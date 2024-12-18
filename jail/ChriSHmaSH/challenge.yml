@@ -1,0 +1,42 @@
+# This file represents the base specification of your challenge. It is used by tools to install and deploy your challenge.
+
+# Required sections
+name: "ChriSHmaSH"
+author: "RMI78"
+category: Jail Escape
+description: "SANTA NEEDS TO BE QUIET TO DELIVER PRESENTS, NOT SCREAMING CHARACTERS LIKE THAT. THE FLAG IS IN /HOME/BAUBLE/FLAG.TXT BUT LIKE IT LOWERCASE YOU GET ME ?"
+value: 100
+type: standard
+
+# Optional settings
+
+connection_info: "ssh bauble@challenges.montrehack.ca -p36087, password: BAUBLE"  
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag
+    - flag{WHY_4RE_Y0U_S0_L0UD_?}
+
+
+
+hints:
+    - Have you though about common environment variables ?
+    - {
+        content: "So Shell parameter expansion and how they works in sh, aka the POSIX compliant ones",
+        cost: 0
+    }
+    - {
+        content: "So how is ending $PATH ? Can you make something out of this ?",
+        cost: 0
+    }
+    - {
+        content: "try to forge your own string using the other hints to reach a shell",
+        cost: 0
+    }
+
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

@@ -1,0 +1,16 @@
+name: "IR's little helper"
+author: "KptCheeseWhiz"
+category: Forensics
+description: |
+  While searching for elves that needed clothes on the deepest parts of the Internet, Santa installed a malware on its workstation. Our IT team managed to capture the first stage of the infection. Can you help them?
+  
+  *The flag format is `FLAG-...`
+
+value: 100
+type: standard
+
+flags:
+  - FLAG-PleaseSomeoneRevokeSantasInternetAccess
+
+files:
+  - capture.pcapng

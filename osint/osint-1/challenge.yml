@@ -1,0 +1,23 @@
+﻿name: "LinkedIn gifts - 1"
+author: "ali31415"
+category: OSINT
+description: |
+    I wonder how many flags you can find here : www.linkedin.com/in/julie31415
+
+value: 100
+type: standard
+
+flags:
+    - "FLAG0001_IL1KEST3G_9qBFsGM"
+
+tags:
+    - OSINT
+
+hints:
+    - {
+        content: "There is a literal huge flag, haven't you seen it?",
+        cost: 0
+    }
+
+state: visible
+version: "0.1"

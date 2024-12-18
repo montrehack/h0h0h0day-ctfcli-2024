@@ -1,0 +1,21 @@
+name: "SantaVision"
+author: "Monchou"
+description: |
+  Santa Claus has a new website to keep track of who's naughty and nice!
+  Since he doesn't want to be sued for privacy violations, he's made sure that
+  the website censor any naughty words.
+
+  The flag is split into 3 parts, each starting with "<index>_" (ex. 1_f00).
+  The final flag is obtained by concatenating all the parts without the index: 
+  [1_f00, 2_b4r, 3_b4z] -> FLAG-f00_b4r_b4z
+
+connection_info: http://challenges.montrehack.ca:36123
+
+category: Web
+
+value: 200
+
+flags:
+  - FLAG-0n3_c4nn07_7ru57_fr0n73nd_53cur17y_m345ur35
+
+version: "0.1"

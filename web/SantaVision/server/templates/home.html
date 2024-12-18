@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<div class="grid-container">
+    {% for title, video in videos %}
+    <div class="grid-item">
+        {% call window(title) %}
+        <div style="justify-content: flex-end;">
+            <img src="/static/img/{{ video.img }}.png" style="width: 70%;" />
+        </div>
+        <div class="field-row" style="justify-content: flex-end; padding: 4px;">
+            <button disabled>Call</button>
+            <button disabled>Visit</button>
+            <button onclick="window.location.href='/video/{{ video.path }}'">Observe</button>
+        </div>
+    </div>
+    <div class="status-bar">
+        <p class="status-bar-field">{{ video.status }}</p>
+        <p class="status-bar-field">Naughty: {{ video.naughty }} %</p>
+        <p class="status-bar-field">Nice: {{ video.nice }} %</p>
+    </div>
+    {% endcall %}
+    {% endfor %}
+</div>
+{% endblock %}

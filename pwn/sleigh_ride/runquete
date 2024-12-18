@@ -1,0 +1,5 @@
+#!/bin/sh
+cd "$1"
+shift
+# Timeout 1h
+exec timeout 3600 "$@" 2>&1 | snow

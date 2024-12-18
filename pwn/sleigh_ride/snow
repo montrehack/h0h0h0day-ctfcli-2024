@@ -1,0 +1,41 @@
+#!/usr/bin/python3 -u
+
+import random
+import sys
+
+def snow(c):
+    if random.randrange(0, 6) < 1:
+        return '*'
+    return c
+
+
+def pad(n):
+    out = ''
+    for _ in range(n):
+        out += snow(' ')
+    return out
+
+
+longest = 116
+line = ""
+
+while not sys.stdin.closed:
+    try:
+        c = sys.stdin.read(1)
+        if not c:
+            break
+
+        line += c
+        if len(line) > longest:
+            longest = len(line)
+
+        if c == '\n':
+            padlen = longest - len(line)
+            padding = pad(padlen)
+            print(padding)
+            line = ""
+        else:
+            print(snow(c), end='')
+    except Exception as e:
+        print(e)
+        break

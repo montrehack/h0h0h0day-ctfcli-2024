@@ -1,0 +1,147 @@
+/*
+Based on https://github.com/iandevlin/iandevlin.github.io/blob/master/mdn/video-player-styled/css/styles.css
+*/
+
+figure {
+	max-width:64rem;
+	height:100%;
+	/* max-height:30.875rem; */
+	margin:auto auto;
+	padding:1.051%;
+	/* background-color:#666; */
+}
+
+video {
+	width:100%;
+    height:100%;
+}
+
+.controls, .controls > * {
+    padding: 0;
+    margin: 0;
+}
+
+.controls {
+    overflow: hidden;
+    background: transparent;
+    width: 100%;
+    height: 8.0971659919028340080971659919028%;
+    position: relative;   
+}
+
+.controls > * {
+    float: left;
+    width: 3.90625%;
+    height: 100%;
+    margin-left: 0.1953125%;
+    display: block;
+}
+
+.controls .progress {
+	cursor:pointer;
+	width:75.390625%;
+}
+.controls button {
+	text-align:center;
+	overflow:hidden;
+	white-space:nowrap;
+  	text-overflow:ellipsis;
+  	border:none;
+  	cursor:pointer;
+  	/* text-indent:-99999px; */
+  	background:transparent;
+  	background-size:contain;
+  	background-repeat:no-repeat;
+}
+
+.controls progress {
+	display:block;
+	width:100%;
+	height:81%;
+	margin-top:2px;
+	margin-top:0.125rem;
+	border:none;
+	overflow:hidden;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	color:#0095dd; /* Internet Explorer uses this value as the progress bar's value colour */
+}
+.controls progress[data-state="fake"] {
+	background:#e6e6e6;
+	height:65%;
+}
+.controls progress span {
+	width:0%;
+	height:100%;
+	display:inline-block;
+	background-color:#2a84cd;	
+}
+
+.controls progress::-moz-progress-bar {
+	background-color:#0095dd;
+}
+/* Chrome requires its own rule for this, otherwise it ignores it */
+.controls progress::-webkit-progress-value {
+	background-color:#0095dd;
+}
+
+/* fullscreen */
+html:-ms-fullscreen {
+	width:100%;
+}
+:-webkit-full-screen {
+	background-color:transparent;
+}
+video:-webkit-full-screen + .controls {
+	background:#ccc; /* required for Chrome which doesn't heed the transparent value set above */
+}
+video:-webkit-full-screen + .controls progress {
+	margin-top:0.5rem;
+}
+
+/* Media Queries */
+@media screen and (max-width:1024px) {
+	figure {
+		padding-left:0;
+		padding-right:0;
+		height:auto;
+	}
+	.controls {
+		/* we want the buttons to be proportionally bigger, so give their parent a set height */
+		height:30px;
+		height:1.876rem;
+	}
+}
+@media screen and (max-width:42.5em) {
+	.controls {
+		height:auto;
+	}
+	.controls > * {
+		display:block;
+		width:16.6667%;
+		margin-left:0;
+		height:40px;
+		height:2.5rem;
+		margin-top:2.5rem;
+	}
+	.controls .progress {
+		/*display:table-caption;*/ /* this trick doesn't work as elements are floated and the layout doesn't work */
+		position:absolute;
+		top:0;
+		width:100%;
+		float:none;
+		margin-top:0;
+	}
+	.controls .progress progress {
+		width:98%;
+		margin:0 auto;
+	}
+	.controls button {
+		background-position:center center;
+	}
+	figcaption {
+		text-align:center;
+		margin-top:0.5rem;
+	}
+}
