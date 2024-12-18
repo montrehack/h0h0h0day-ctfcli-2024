@@ -6,3 +6,8 @@
 # Our secrets
 /env.sh
 /.secrets/
+
+
+# CTFcli integration
+.ctf/
+venv/
