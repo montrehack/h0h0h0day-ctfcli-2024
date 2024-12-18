@@ -7,7 +7,5 @@ Requirement:
 Start the lab:
 ```bash
 docker build -t flask-app .
-```
-```bash
 docker run -p 15685:15685 flask-app
 ```
