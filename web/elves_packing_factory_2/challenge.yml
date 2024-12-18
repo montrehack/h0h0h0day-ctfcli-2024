@@ -10,7 +10,7 @@ description: |
   What a ood-ylddid rotten snowflake he is! I think you want the gift he gives to himself, no?
 value: 100
 type: standard
-connection_info: tbd
+connection_info: http://134.209.40.244:8080/
 
 flags:
     - FLAG{DearSantaYouAreAbsolutelyDiddly-DooAwesomeUnlikeThatRottenSnowflake}
