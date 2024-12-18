@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    image: .
+    image: winterboot
     ports:
       - "36969:8080"
     environment:

@@ -32,7 +32,8 @@ pushd pwn/sleigh_ride
 popd
 
 pushd web/WinterBoot
-    sudo docker compose up -d
+    docker build -t winterboot .
+    sudo docker compose up  --build -d
 popd
 
 pushd web/custom_tshirts
