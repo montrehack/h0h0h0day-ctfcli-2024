@@ -50,3 +50,7 @@ popd
 pushd web/FENtastic/deployment
     sudo docker compose up -d
 popd
+
+pushd pwn/baby_autopwn
+    sudo docker compose up -d
+popd

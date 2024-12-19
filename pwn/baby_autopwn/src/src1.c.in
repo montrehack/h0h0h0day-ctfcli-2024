@@ -1,0 +1,11 @@
+#include <unistd.h>
+
+
+int main(void)
+{
+	char buf[INPLEN];
+
+	read(0, buf, sizeof(buf)*2);
+
+	return 0;
+}

@@ -1,0 +1,15 @@
+name: "baby autopwn"
+author: "fob"
+description: |
+  Santa is organizing the Cyber Baby Challenge to test the pwn'ing
+  skills of hackers like you. Are you up to the task?
+
+  format: `FLAG-*`
+
+connection_info: nc challenges.montrehack.ca 9999
+category: pwn
+image: .
+value: 200
+flags:
+  - FLAG-112a4c4eb0da8e8ec9a6261c3c94a8fd
+version: "0.1"

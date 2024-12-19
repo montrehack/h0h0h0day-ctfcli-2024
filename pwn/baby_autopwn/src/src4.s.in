@@ -1,0 +1,30 @@
+.intel_syntax noprefix
+.text
+.global _start
+
+_start:
+	call	main
+	mov	rax, 60
+	xor	rdi, rdi
+	syscall
+
+main:
+	sub	rsp, INPLEN
+	xor	rax, rax
+	xor	rdi, rdi
+	mov	rsi, rsp
+	mov	rdx, 1048576
+	syscall
+	call	divert
+	add	rsp, INPLEN
+	ret
+
+divert:
+	sub	rsp, INPLEN
+	xor	rax, rax
+	xor	rdi, rdi
+	mov	rsi, rsp
+	mov	rdx, INPLEN
+	syscall
+	add	rsp, INPLEN
+	ret
