@@ -4,6 +4,11 @@ category: Steganography
 description: This song is bussin. See you at 1915.
 value: 250
 flags:
-      - flag ch1mn3y cl34r pr0c33d w1th ch33r
+      - type: static
+      content: "flag ch1mn3y cl34r pr0c33d w1th ch33r"
+      data: case_insensitive
+      - type: static
+      content: "flagch1mn3ycl34rpr0c33dw1thch33r"
+      data: case_insensitive
 files:
       - favsong.zip
