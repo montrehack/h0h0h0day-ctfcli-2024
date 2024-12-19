@@ -9,6 +9,6 @@ description: |
     Format du flag = flag-{*}
 value: 100
 flags:
-    - flag{Th1s1sh0w3ll1i0tH1d3Fil3s}
+    - flag{Th1s_1s_h0w_3ll1i0t_H1d3_Fil3s}
 files:
     - fs0ciety.xyz
