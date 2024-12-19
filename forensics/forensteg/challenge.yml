@@ -1,0 +1,14 @@
+name: PcapsAreStegOrNot
+author: "obilodeau"
+category: Forensics
+description: |
+  Packets hide their truth,
+  Bits whisper secrets unseen—
+  Stego’s sly disguise.
+value: 100
+
+flags:
+      - flag{viva-nsec}
+
+files:
+      - forensteg.pcap
