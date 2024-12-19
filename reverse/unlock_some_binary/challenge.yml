@@ -1,7 +1,7 @@
 name: unlock_some_binary
 author: Crevetor
 category: Reverse Engineering
-decription: I hope we have the right key (the flag format is flag{something})
+description: I hope we have the right key (the flag format is flag{something})
 value: 100
 
 flags:
