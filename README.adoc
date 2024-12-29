@@ -38,6 +38,36 @@ connect to the server, start challenges
     cd /srv/h0h0h0day/
     ./start-all.sh
 
-== CTFd
+== CTFd - ctfcli
 
-Use ctfcli
+We use ctfcli to generate deployments of challenges to CTFd. This uses a standardized `challenge.yml` file, one file per challenge.
+
+This project assumes 1 folder per flag. If a challenge or track contains multiple flag, handle it just like it was a new challenge.
+
+For example, this would be a valid 3 flag track file structure
+
+    └── web
+        ├── my_fancy_h0h0h0_chall-1
+        │   ├── challenge.yml
+        │   ├── Dockerfile
+        │   └── src
+        ├── my_fancy_h0h0h0_chall-2
+        │   └── challenge.yml
+        └── my_fancy_h0h0h0_chall-3
+            └── challenge.yml
+
+=== Command generation / automation
+
+To generate ctfcli commands to add all challenges to a CTFd instance
+
+    find . -mindepth 2 -maxdepth 2 | grep -v "./venv"| grep -v "./.ctf/" | awk '{print substr($1,3); }' | sed -e "s/^/python -m ctfcli challenge add /"
+
+To install all challenges (AKA publish state in CTF)
+
+    find . -mindepth 2 -maxdepth 2 | grep -v "./venv"| grep -v "./.ctf/" | awk '{print substr($1,3); }' | sed -e "s/^/python -m ctfcli challenge install /"
+
+To change a challenge's description, points, etc, modify it's `challenge.yml` and re-sync it
+
+    python -m ctfcli challenge sync jail/ChriSHmaSH
+
+Installing and syncing will trigger Montrehack's CTFd Webhook and publish to discord, spoiling the challenges ahead of time. Make the channel private or delete the bot's messages to avoid leaks.
