@@ -11,3 +11,6 @@
 # CTFcli integration
 .ctf/
 venv/
+
+# VSCode
+.vscode/
